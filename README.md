@@ -27,7 +27,7 @@ sudo docker run -d --net=host archci/archci
 Start [simple-worker](https://github.com/ArchCI/simple-worker) worker.
 
 ```
-sudo docker run -d --net=host archci/simple-docker
+sudo docker run -d --net=host --privileged archci/simple-docker
 ```
 
 ## Usage
