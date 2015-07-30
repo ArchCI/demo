@@ -9,25 +9,31 @@ Setup ArchCI service within minutes! Happy hacking :tada:
 Start [mysql](https://github.com/tobegit3hub/mysql_docker) database.
 
 ```
-sudo docker run -d -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:5.7
+docker run -d -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:5.7
 ```
 
 Start [redis](https://github.com/tobegit3hub/redis_docker) service.
 
 ```
-sudo docker run -d -p 6379:6379 redis
+docker run -d -p 6379:6379 redis
 ```
 
 Start [archci](https://github.com/ArchCI/archci) server.
 
 ```
-sudo docker run -d --net=host archci/archci
+docker run -d --net=host archci/archci
 ```
 
-Start [simple-worker](https://github.com/ArchCI/simple-worker) worker.
+If you're using overlayfs, start [simple-worker](https://github.com/ArchCI/simple-worker) worker.
 
 ```
-sudo docker run -d --net=host --privileged archci/simple-worker
+docker run -d --net=host --privileged archci/simple-worker
+```
+
+If you're using aufs, start with `-e AUFS=true`.
+
+```
+docker run -d --net=host --privileged -e AUFS=true archci/simple-worker
 ```
 
 ## Usage
