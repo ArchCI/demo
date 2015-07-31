@@ -12,10 +12,10 @@ Start [mysql](https://github.com/tobegit3hub/mysql_docker) database.
 docker run -d -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:5.7
 ```
 
-Start [redis](https://github.com/tobegit3hub/redis_docker) service.
+Start [redis](https://github.com/tobegit3hub/redis_docker) service
 
 ```
-docker run -d -p 6379:6379 redis
+docker run -d -p 6379:6379 redis:3.0
 ```
 
 Start [archci](https://github.com/ArchCI/archci) server.
