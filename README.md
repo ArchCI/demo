@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Setup ArchCI service within minutes! Happy hacking :tada: 
+Setup [ArchCI](https://github.com/ArchCI/archci) service within minutes! Happy hacking :tada: 
 
 ## Tutorial
 
